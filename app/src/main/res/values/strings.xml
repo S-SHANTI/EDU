@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Soheil Final</string>
+    <string name="welcome">welocme to Application</string>
+    <string name="test">test</string>
+    <string name="sky">sky</string>
+    <string name="previous">previous</string>
+    <string name="next">next</string>
+    <string name="_0902">09220000000</string>
+    <string name="email_address">email_address</string>
+    <string name="soheil">soheil</string>
+    <string name="on">on</string>
+    <string name="off">off</string>
+</resources>
