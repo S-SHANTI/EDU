@@ -9,17 +9,11 @@
     tools:context=".MainActivity">
 
 
-    <androidx.appcompat.widget.SwitchCompat
-        android:text="حالت شب"
-        android:layout_margin="15dp"
-        android:checked="false"
-        android:id="@+id/sw_btn"
-        android:layoutDirection="rtl"
+    <Button
+        android:textColor="@color/black"
+        android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
-
-
+        android:layout_height="wrap_content"
+        android:text="Button" />
 </LinearLayout>
 

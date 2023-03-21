@@ -1,4 +1,5 @@
 package com.example.testproject
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,11 +15,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.swBtn.setOnClickListener {
-            if (binding.swBtn.isChecked)
-                Toast.makeText(this, "on", Toast.LENGTH_SHORT).show()
-                else
-                Toast.makeText(this, "off", Toast.LENGTH_SHORT).show()
-            }
+        binding.button.setOnClickListener {
+            intent = Intent(this,TestActivity::class.java)
+            intent.putExtra("name","soheil")
+            intent.putExtra("id",12)
+            intent.putExtra("sleep", true)
+            startActivity(intent)
         }
+        }
+
     }
