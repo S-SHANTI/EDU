@@ -2,8 +2,10 @@ package com.example.testproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.testproject.databinding.ActivityTestBinding
+import kotlin.math.log
 
 class TestActivity : AppCompatActivity() {
 
@@ -20,7 +22,7 @@ class TestActivity : AppCompatActivity() {
         binding.button2.setOnClickListener {
             Toast.makeText(this,"salam"  , Toast.LENGTH_SHORT).show()
             binding.button2.setOnLongClickListener{
-                Toast.makeText(this, "salaaam", Toast.LENGTH_SHORT).show()
+              Log.i("LONG_CLICK0","check")
                 return@setOnLongClickListener true
             }
 
