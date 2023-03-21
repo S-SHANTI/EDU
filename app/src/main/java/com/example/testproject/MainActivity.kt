@@ -1,6 +1,8 @@
 package com.example.testproject
+
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testproject.databinding.ActivityMainBinding
@@ -16,12 +18,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.button.setOnClickListener {
-            intent = Intent(this,TestActivity::class.java)
-            intent.putExtra("name","soheil")
-            intent.putExtra("id",12)
-            intent.putExtra("sleep", true)
-            startActivity(intent)
+            binding.progressBar.progress = binding.seekBar.progress
         }
-        }
-
     }
+
+}
