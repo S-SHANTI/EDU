@@ -1,18 +1,11 @@
 package com.example.testproject
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testproject.databinding.ActivityTestBinding
+import android.os.Bundle
 
-class TestActivity :AppCompatActivity() {
-
-    private lateinit var binding: ActivityTestBinding
-
+class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityTestBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_test1)
     }
-
-
 }
