@@ -18,7 +18,12 @@ class TestActivity : AppCompatActivity() {
         val sleep=intent.getBooleanExtra("sleep",false)
 
         binding.button2.setOnClickListener {
-            Toast.makeText(this,id.toString() , Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"salam"  , Toast.LENGTH_SHORT).show()
+            binding.button2.setOnLongClickListener{
+                Toast.makeText(this, "salaaam", Toast.LENGTH_SHORT).show()
+                return@setOnLongClickListener true
+            }
+
         }
     }
 }
