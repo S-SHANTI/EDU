@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:numStars="5"
         android:rating="3.5"
+        android:theme="@style/CustomRatingBar"
         tools:ignore="SpeakableTextPresentCheck" />
 
 
