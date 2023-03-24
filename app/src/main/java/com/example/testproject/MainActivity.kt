@@ -14,6 +14,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val ischecked = false
+
+        binding.fabShow.setOnClickListener {
+
+            if (ischecked) {
+                binding.fabShow.extend()
+            } else {
+                binding.fabShow.shrink()
+            }
+        }
+
     }
 
 }
