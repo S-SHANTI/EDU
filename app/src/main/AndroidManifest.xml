@@ -17,6 +17,8 @@
             android:exported="false" />
 
         <activity
+            android:screenOrientation="portrait"
+            android:label="@string/soheil"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
